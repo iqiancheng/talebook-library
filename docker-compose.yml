@@ -1,0 +1,9 @@
+version: '2'
+services:
+    calibre:
+        container_name: talebook
+        ports:
+            - '8456:80'
+        volumes:
+            - './library:/data/books/library'
+        image: talebook/talebook
